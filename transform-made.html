@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+다양한 변신
+        </title>
+    <style>
+div{
+display: inline-block;
+color: white;
+
+}
+#ro{
+    transform: rotate(20deg); background-color: darkkhaki;
+
+float: left;
+}
+#sk{
+    background-color: darkkhaki; transform: skew(0,-20deg);
+
+float: left;
+}
+#sk:hover{
+    transform: skewy(-70deg);
+}
+#tr{
+    background-color: darkkhaki; transform: translateY(100px);
+    
+    float: left;
+}
+#sc{
+    background-color: darkkhaki; transform: scale(3,1);
+    
+    float: left;
+}
+#sc:hover{
+    transform: scale(4,2);
+}
+/*마우스 누를 때 추가 변환*/
+#sc:active{
+    transform:scale(1,5);
+}
+    </style>
+    </head>
+    <body>
+<h3>다양한 Transform</h3>
+아래는 회전,기울임,이동,확대/축소가 적용된 사례이다.
+ 또한 마우스를 올리면 추가적 변환이 일어난다.
+<hr>
+<div id="ro">rotate 20 deg</div>
+<div id="sk">skew(0,-20deg)</div>
+<div id="tr">transitiony(100px)</div>
+<div id="sc">scale(3,1)</div>
+    </body>
+</html>

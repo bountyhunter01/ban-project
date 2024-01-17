@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>naver.com</title>
+        <style>
+            body {
+                background-color: chartreuse;
+                height: 100vh;
+                text-align: center;
+            }
+            span {
+                font-size: 50px; 
+                color: white;
+                text-shadow: 0px 0px 10px black;
+                display: inline-block;
+            }
+            .sform {
+                border: solid white 10px;
+                padding: 10px;
+            }
+            #bar ul {
+                margin: 0px; 
+                padding: 0px;
+                width: 567px;
+                text-align: center;
+            }
+            #bar ul li {
+                display: inline-block;
+                list-style-type: none;
+                font-size: 20px;
+                padding: 0px 15px;
+            }
+            #bar ul li a {
+                color: white;
+                text-decoration: none;
+            }
+            #bar ul li a:hover {
+                color: violet;
+ 
+            }
+            #news{
+                background-image:url(news.png);
+                background-size: 50px 50px;
+                
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    <body>
+        <span>NAVER</span>
+        <br>
+        <form class="sform" action="https://search.naver.com/search.naver" target="_blank" method="get">
+            <input name="query" type="text">
+            <input type="submit" value="검색">
+        </form>
+        <nav id="bar">
+            <ul>
+                <label id="news">
+                <li><a href="https://dictionary.cambridge.org/dictionary/english/home" class="img1">뉴스</a></li>
+                </label>
+                <li><a href="https://dictionary.cambridge.org/dictionary/english/home">카페</a></li>
+                <li><a href="https://dictionary.cambridge.org/dictionary/english/home">블로그</a></li>
+                <li><a href="https://dictionary.cambridge.org/dictionary/english/home">쇼핑</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

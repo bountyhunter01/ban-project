@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>naver.com</title>
+        <style>
+            body {
+                background-color: chartreuse;
+                height: 100vh;
+                text-align: center;
+            }
+            span {
+                font-size: 50px; 
+                color: white;
+                text-shadow: 0px 0px 10px black;
+                display: inline-block;
+            }
+            .sform {
+                border: solid white 10px;
+                padding: 10px;
+            }
+            #bar thead{
+                margin:0px;
+                padding:0px;
+                display: flex;
+                align-items:left;
+                justify-content:left;
+            }
+            #imgsh tr th{/*이미지 크기*/
+                width: 300px;height:300px;
+            }   
+
+            #bar tbody{/* 여기에 링크달아야함*/
+                margin: 0px; 
+                padding: 0px;
+                
+                text-align: center;
+            }
+            #bar tbody tr {/*링크 달릴 문자 간격과 크기*/
+                display: inline-block;
+                list-style-type: none;
+                font-size: 20px;
+                padding: 0px 15px;
+                width:100vh;
+                
+            }
+            #bar tbody tr td{
+                width: 10%;
+                height: 100px;
+            }
+            #bar tbody tr td a{
+                color: white;
+                text-decoration: none;
+              
+            }
+            #bar tbody tr td a:hover {
+                color: violet;
+ 
+            }
+            #news{/*이미지 사이즈랑 주소*/
+                background-image:url(news.png);
+                background-size: 100% cover; 
+                
+                background-repeat: no-repeat;
+            }
+            #imgsh tr th:hover{/*이미지 그림자*/
+                box-shadow: 5px 5px 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <span>NAVER</span>
+        <br>
+        <form class="sform" action="https://search.naver.com/search.naver" target="_blank" method="get">
+            <input name="query" type="text">
+            <input type="submit" value="검색">
+        </form>
+       <table id="bar">
+       <thead id="imgsh"><!--이미지 그림자-->
+        <tr><th>이미지</th><th>이미지</th><th>이미지</th><th>이미지</th><th id="news">이미지</th></tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F" target="_blank">메일</a></td>
+            <td><a href="https://section.cafe.naver.com/ca-fe/home" target="_blank">카페</a></td>
+            <td><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">블로그</a></td>
+            <td><a href="https://shopping.naver.com/home" target="_blank">쇼핑</a></td>
+            <td><a href="https://news.naver.com/" target="_blank">뉴스</a></td>
+        </tr>
+        </tbody>
+       </table>    
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>naver.com</title>
+        <style>
+            body {
+                background-color:snow;
+                height: 100vh;
+                
+                
+            }
+            header span { /*네이버 헤드*/
+                font-size: 50px; 
+                color: white;
+                text-shadow: 0px 0px 10px black;
+                display: flex;
+                justify-content: center;
+            }
+            aside{/*로그인창 바깥 테두리*/
+                border:black solid 1px;
+                padding: 100px;
+                height: 20px;
+                width: 15%;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                float: right;
+            }
+            aside span:hover{
+                background-color:#2c835f ;
+            }
+            aside span a{/*로그인창2*/
+                display:flex;
+                position:top;
+                justify-content:right;
+                align-items: center;
+                text-decoration: none;
+                color: white;
+            }
+            aside span{/*로그인창*/
+                border: solid #319990; 
+                background-color:#319990;
+                color: white;
+                width: 200px;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+            strong{
+                font-size: 25px;
+            }
+            .sform {/*검색창 박스*/
+                border: solid  chartreuse 10px;
+                padding: 10px;
+                border-radius:60px 60px;
+                box-sizing:border-box;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 60em;
+                margin: auto;
+            }
+            #bar tbody{/* 검색창 밑에 부분*/
+                margin: auto; 
+                padding: 0px;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+                
+            }
+           
+                #bar thead{/*이미지넣는장소*/
+                background-position:center;
+                padding:10px;
+                display: inline-block;
+                justify-content: center;
+                align-items: center;
+            }
+            thead tr th{/*이미지 크기*/
+                width: 50px;
+                height:50px;
+                background-position:center;
+                margin: auto;
+                display: inline-block;
+
+            }
+            #bar tbody tr td{/*이미지밑에 문자 크기*/
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                display: flex;
+                margin: auto;
+                align-items:center;
+                justify-content:center;
+            }   
+            #bar tbody tr {/*링크 달릴 문자 간격과 크기*/
+                list-style-type: none;
+                font-size: 20px;
+                padding: 0px;
+                width:100%;
+                display: flex;
+                align-items:center;
+                justify-content:center;    
+            }
+            #bar tbody tr td a{
+                color: black;
+                text-decoration: none;
+                margin: auto;
+                
+            }
+            #bar tbody tr td a:hover {
+                color: violet;
+ 
+            }
+            #news{/*이미지 사이즈랑 주소*/
+                background-image:url(news.png);
+                background-size:cover; 
+                background-repeat: no-repeat;
+            }
+            #email{/*이메일 주소*/
+                background-image:url(email.png) ;
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+            #cafe{
+                background-image:url(cafe.png);
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            #blog{
+                background-image:url(blog.png) ;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #shopping{
+                background-image:url(shopping.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            thead tr th:hover{/*이미지 그림자*/
+                box-shadow: 1px 1px 3px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <span>NAVER</span>
+        </header>
+        <br>
+        <section><!--검색창-->
+        <form class="sform" action="https://search.naver.com/search.naver" target="_blank" method="get">
+            <input name="query" type="text">
+            <input type="submit" value="검색">
+        </form>
+        </section>
+
+        <section id="bar"><!--아이콘및 하위 사이트링크-->
+       <table >
+       <thead><!--이미지 그림자-->
+        <tr><th id="email"></th>
+            <th id="cafe"></th>
+            <th id="blog"></th>
+            <th id="shopping"></th>
+            <th id="news"></th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td><a href="https://nid.naver.com/nidlogin.login?url=https%3A%2F%2Fmail.naver.com%2F" target="_blank">메일</a></td>
+            <td><a href="https://section.cafe.naver.com/ca-fe/home" target="_blank">카페</a></td>
+            <td><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank">블로그</a></td>
+            <td><a href="https://shopping.naver.com/home" target="_blank">쇼핑</a></td>
+            <td><a href="https://news.naver.com/" target="_blank">뉴스</a></td>
+        </tr>
+        </tbody>
+       </table> 
+       </section>   
+       <aside><!--로그인 페이지-->
+        <div><span><a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+            <strong>NAVER</strong>로그인</a> </span><br>
+        </div>
+       </aside>
+       <section id="orange">
+        <header>
+        배너
+        </header>
+        <article>
+       <table>
+        <thead>
+        <tr><th>신</th><th>문</th><th>이</th><th>야</th><th>기</th></tr>
+        </thead>
+        <tbody id="sky">
+            <tr><td>인</td><td>생</td><td>이</td><td>야</td><td>기</td></tr>
+        </tbody>
+       </table>
+        </article>
+       </section>
+    </body>
+</html>
