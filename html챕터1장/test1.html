@@ -1,0 +1,30 @@
+<!DOCTYPEhtml>
+<HTML>
+<HEAD>
+<TITLE>웹 페이지의 구성 요소</TITLE>
+<style>
+body { background-color : linen; color : green;
+    margin-left : 40px; margin-right : 40px;}
+h3 { text-align : center; color : darkred;}
+hr { width : 800px; border : solid gray; 
+    background-color : red }
+span { color: blue; font-size: 20px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("fig").src = "ElvisPresley.png"
+	}
+	function hide() { // <img>에 이미지 제거
+		document.getElementById("fig").src= "";
+	}
+</script>
+</HEAD>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()"> Elvispresley</h3>
+<hr>
+<div> <img id="fig" src="ElvisPresley.png"></div>
+    He was an American singer and actor. 
+    in Novermber 1956, he made his film debut in 
+    <span> Love me tender</span>, he is often referred to as"<span>the king of rock and roll</span>"
+</body>
+</html>
