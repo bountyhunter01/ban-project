@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Wifikipedia
+        </title>
+    </head>
+    <style>
+        html{
+padding:50px;
+        }
+        body{
+            margin: 0;
+            padding: 0px;
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+        }
+        header h2{
+            display: inline;
+            
+        }
+        aside{/*목차*/
+            margin:20px;
+            position: fixed;
+        }
+        aside ul{
+            list-style-type: none;
+            padding: 10px;
+        }
+        div{/*그리드를 통해서 전체 구조를 나눌려고 만듬*/
+           
+        }
+        section{
+            display:grid;
+            text-align: center;
+            margin-left: 100px;
+        }
+        section h3{
+            border-bottom: 1px solid;
+            margin-left: 50px;
+            width: 60%;
+            text-align: left;
+            font-size: 50px;
+        }
+        .headline{/*본문글*/
+            margin-left: 50px;
+            width: 60%;
+            text-align: left;
+        }
+    </style>
+    <body>
+        <header>
+            <div >
+        <h2>위키백과</h2>
+        <form class="search" action="https://search.ko.wikipedia.org/search.wikipedia"
+         method="get"  target="_blank" >
+         <input type="text" name="query" >
+        </a>
+        <input type="submit" value="검색">
+        </div>
+        </header>
+        <aside>
+            <p>목차</p>
+            <div>
+                <ul>
+                    <li>처음위치</li><br>
+                    <li>국호</li><br>
+                    <li>지리</li><br>
+                    <li>역사</li><br>
+                    <li>정치</li><br>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <header>
+              <h3>대한민국</h3>
+            </header>
+            <article class="headline">
+                <p>문서 토론</p>
+               <hr>
+            <div>
+                대한민국(한국 한자: 大韓民國, 영어: Republic of Korea, ROK), 
+                약칭 한국(한국 한자: 韓國, 영어: Korea), 
+                남한(한국 한자: 南韓, 영어: South Korea)은 
+                동아시아의 한반도 군사 분계선 남부에 위치한 국가이다. 
+                현정체제는 대한민국 제6공화국이다. 
+                대한민국의 국기는 대한민국 국기법에 따라 태극기[5]이며, 
+                국가는 관습상 애국가, 국화는 관습상 무궁화이다.
+                 공용어는 한국어와 한국 수어이다. 수도는 서울이다. 
+                 인구는 2023년을 기준으로 약 5,175만 명으로, 
+                전체 인구 중 절반이(약 2,625만 명) 수도권에 살고 있다
+            </div>
+        </article>
+        </section>
+    </body>
+</html>

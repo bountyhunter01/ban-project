@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>switch</title></head>
+<body>
+<h3>switch를 이용한 학점 매기기</h3>
+<hr>
+<script>
+    var grade;
+    var score = prompt("황기태 님 점수를 입력하세요",);
+    var range = Math.floor(score / 10); // 점수를 10으로 나눈 몫
+
+    switch(range){
+        case 10:
+        case 9:
+            grade = "A";
+            break;
+        case 8:
+            grade = "B";
+            break;
+        case 7:
+            grade = "C";
+            break;
+        case 6:
+            grade = "D";
+            break;
+        default: 
+            grade = "F";
+    }
+
+    document.write(score + "는 " + grade + "입니다.<br>")
+</script>
+</body>
+</html>
